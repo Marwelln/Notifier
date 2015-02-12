@@ -1,0 +1,22 @@
+{
+	"name": "marwelln/notifier",
+	"description": "Easily display notification in your Laravel web app.",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Martin Martensson",
+			"email": "marwelln@redward.se"
+		}
+	],
+	"minimum-stability": "stable",
+	"require": {
+		"php": ">=5.4",
+		"illuminate/session": "~5.0",
+		"illuminate/support": "~5.0"
+	},
+	"autoload": {
+		"psr-0": {
+			"Marwelln\\Notifier": "src/"
+		}
+	}
+}
