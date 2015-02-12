@@ -12,7 +12,8 @@
 	"require": {
 		"php": ">=5.4",
 		"illuminate/session": "~5.0",
-		"illuminate/support": "~5.0"
+		"illuminate/support": "~5.0",
+		"marwelln/basset": "*"
 	},
 	"autoload": {
 		"psr-0": {
