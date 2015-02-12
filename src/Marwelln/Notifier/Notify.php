@@ -1,7 +1,6 @@
 <?php namespace Marwelln\Notifier;
 
 use Illuminate\Validation\Validator;
-//use Session;
 
 class Notify {
 	/**
@@ -19,12 +18,12 @@ class Notify {
 	 */
 	protected $session;
 
-	public function __construct(array $attributes = [], SessionStore $session) {
+	public function __construct(array $attributes = []) {
 		$this->attributes = array_merge($this->attributes, $attributes);
 
 		$this->attributes['visible'] = ! empty($this->attributes['message']);
 
-		$this->session = $session;
+		$this->session = app('Marwelln\Notifier\LaravelSessionStore');
 	}
 
 	/**
