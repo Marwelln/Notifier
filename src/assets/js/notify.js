@@ -75,6 +75,7 @@
         if (parent.classList.contains('autoclose')) {
             event.detail.wait = true;
             document.dispatchEvent(event);
+            event.detail.wait = false;
         }
     }
 })();
